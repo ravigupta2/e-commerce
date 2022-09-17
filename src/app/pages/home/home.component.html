@@ -1,0 +1,18 @@
+<div class="flex align-center justify-start block">
+  <div *ngFor="let item of products" class="w30" (click)="goToProduct(item)">
+    <div>
+      <div class="imageBlock" [style.background-image]="'url('+ item.image[0] + ')'">
+    </div>
+    <div class="p10">
+      <div class="text-center fw600 fontWhite6">{{item.name | titlecase}}</div>
+      <div class="text-center fw600 pt10">${{item.price}}</div>
+      <div class="text-center pt20">
+        <button class="button redButton" (click)="addToCart(item);$event.stopPropagation()">
+          Add to cart
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<div class="p20">
+  <div class="w100 ml-auto">
+    <button class="button redButton" routerLink="/home">
+      Back
+    </button>
+  </div>
+  <div class="w100">
+    <div *ngFor="let item of helper.common.cart" class="flex justify-start mb20">
+      <div>
+        <img class="itemImage" src="{{item.image[0]}}" alt>
+      </div>
+      <div class="w60 pl30">
+        <h3>{{item.name}}</h3>
+        <p>${{item.price}}</p>
+      </div>
+      <div>
+        <button class="button redButton" (click)="changeCart(item , false)">
+          -
+        </button>
+        <span class="p10">{{item.quantity}}</span>
+        <button class="button redButton" (click)="changeCart(item , true)">
+          +
+        </button>
+      </div>
+    </div>
+    <div>
+      <h3>Total: ${{helper.common.price}}</h3>
+    </div>
+  </div>
+</div>
+

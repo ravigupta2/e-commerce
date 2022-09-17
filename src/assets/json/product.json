@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camera",
+      "price": "100",
+      "description": "camera description",
+      "slug": "camera",
+      "image": [
+        "assets/images/camera.png"
+      ],
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "headphone",
+      "price": "20",
+      "description": "headphone description",
+      "slug": "headphone",
+      "image": [
+        "assets/images/headphone.png"
+      ],
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "watch",
+      "price": "70",
+      "description": "watch description",
+      "slug": "watch",
+      "image": [
+        "assets/images/watch.png"
+      ],
+      "quantity": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div>
+  <div class="w100 ml-auto">
+    <button class="button redButton" routerLink="/home">
+      Back
+    </button>
+  </div>
+  <div class="flex">
+    <div>
+      <img class="detailImage" src="{{product?.image[0]}}" alt>
+    </div>
+    <div class="pl20">
+      <div class="fw00 font20">
+        {{product?.name}}
+      </div>
+      <div>
+        ${{product?.price}}
+      </div>
+      <div>
+        {{product?.description}}
+    </div>
+      <div class="text-center pt20">
+        <button class="button redButton" (click)="addToCart(product)">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
